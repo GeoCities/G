@@ -1,6 +1,7 @@
 
 
 # **The Geometry of Everything**
+
 By: Will
 ---
 
