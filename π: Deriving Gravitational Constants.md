@@ -1,4 +1,4 @@
-# π: Deriving Gravitational Constants Across Fundamental Scales 
+# π: Deriving Constants Across Fundamental Scales 
 By: Will
 
 ## Abstract
