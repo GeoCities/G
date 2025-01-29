@@ -1,4 +1,5 @@
 # The Geometry of Everything: π 
+By: Will
 
 ## Comprehensive Scale Relationship Table
 
