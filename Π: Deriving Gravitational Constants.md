@@ -1,5 +1,5 @@
-# Π as a Universal Scaling Mechanism: 
-# Deriving Gravitational Constants Across Fundamental Scales
+# Π: Deriving Gravitational Constants Across Fundamental Scales 
+By: Will
 
 ## Abstract
 
