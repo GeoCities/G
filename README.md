@@ -478,5 +478,7 @@ Let \( S(x) \) represent spatial representation:
 
 The universe is not continuous OR discrete.
 
-The universe is BOTH: A sophisticated geometric information transfer system where smoothness and quantization are complementary aspects of the same fundamental reality.
+The universe is smooth in discrete packets. A sophisticated geometric information transfer where relative to itself even a quantized particle in superposition relative to us, is to itself in a stationary frame in its own smooth space relative to us.  The electron relative to itself doesnt move to a higher "shell," rather to the  electron it is inertial in its own frame, the nuclus moves away relative to the electron. 
+
+Absolute and relative frames.  Quantized packets of smooth space.  
 
