@@ -1,7 +1,7 @@
 # G
+By: Will
 
 # The Geometry of Everything
-By: Will
 
 
 ## Table of Contents
