@@ -1,8 +1,8 @@
 # G
 
 # The Geometry of Everything
-
 By: Will
+
 
 ## Table of Contents
 
