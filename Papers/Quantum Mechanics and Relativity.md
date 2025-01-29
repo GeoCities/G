@@ -1,11 +1,5 @@
 # The Geometry of Everything: A Unified Framework for Quantum Mechanics and Relativity
 
-## Title Page
-**The Geometry of Everything: 
-Bridging Quantum Mechanics and Relativity through Geometric Information Transfer**
-
-*By [Your Name]*
-
 ## Abstract
 
 Current physical theories stand at an impasse. Quantum mechanics and relativity, two pillars of modern physics, remain fundamentally incompatible. This paper introduces a revolutionary geometric framework that unifies these seemingly disparate descriptions of reality, revealing a fundamental geometric nature of information transfer across all scales of the universe.
