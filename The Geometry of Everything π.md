@@ -1,4 +1,4 @@
-# Fundamental Scale Relationships: π as the Universal Transformation Constant
+# The Geometry of Everything: π 
 
 ## Comprehensive Scale Relationship Table
 
