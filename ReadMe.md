@@ -1,4 +1,4 @@
-# **The Geometry of Everything: \( G = \pi \cdot f(E, m, L) \) — A Geometric Unified Equation**
+# **The Geometry of Everything: \( G = \pi \cdot f(E, m, L) \)**
 
 ## **By: Will**
 
