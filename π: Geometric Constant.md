@@ -1,4 +1,4 @@
-# Geometric Fundamental Constant: π
+# π: Geometric Fundamental Constant
 By: Will
 
 ## Emergence of Fundamental Geometric Invariance Across Transformational Frames
