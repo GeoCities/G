@@ -1,6 +1,6 @@
-# **G**
 
-## **The Geometry of Everything**
+
+# **The Geometry of Everything**
 By: Will
 ---
 
