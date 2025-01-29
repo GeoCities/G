@@ -1,4 +1,4 @@
-# Quantum Space Scales: The Fundamental Geometric Architecture of the Universe
+# Quantum Space: The Fundamental Geometric Architecture of the Universe
 
 ## Abstract
 
