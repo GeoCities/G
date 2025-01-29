@@ -5,6 +5,14 @@
 By: Will
 ---
 
+## Core Equations
+
+| **Absolute Geometry** | **Relative Geometry** |
+|-|-|
+| \( \kappa(r) = \frac{\hbar}{r^2} + \frac{GM}{c^2 r} + \sqrt{\frac{u}{\epsilon_0}} + \sum(\alpha_i g_i/r^2) + \beta(\Phi_u) + \gamma(\theta_{QCD}) + \omega(v/v_0) \) | \( \kappa^{rel}(r) = \kappa(r) \cdot \left(1 - \frac{v^2}{c^2}\right) \cdot \left(1 + \frac{GM}{r c^2}\right) \) |
+
+---
+
 ## Table of Contents
 
 ### I. Introduction and Core Framework
@@ -85,11 +93,6 @@ By: Will
     - NEW Table 49: Philosophical Consequences
     - NEW Table 50: Unification Pathways
 
-## Core Equations
-
-| **Absolute Geometry** | **Relative Geometry** |
-|-|-|
-| \( \kappa(r) = \frac{\hbar}{r^2} + \frac{GM}{c^2 r} + \sqrt{\frac{u}{\epsilon_0}} + \sum(\alpha_i g_i/r^2) + \beta(\Phi_u) + \gamma(\theta_{QCD}) + \omega(v/v_0) \) | \( \kappa^{rel}(r) = \kappa(r) \cdot \left(1 - \frac{v^2}{c^2}\right) \cdot \left(1 + \frac{GM}{r c^2}\right) \) |
 
 ## Key Principles
 - Geometric information as fundamental carrier
