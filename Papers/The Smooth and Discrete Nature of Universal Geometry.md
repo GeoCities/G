@@ -1,4 +1,4 @@
-# Space Packets: The Smooth and Discrete Nature of Universal Geometry
+# Quantum Space Packets: The Smooth and Discrete Nature of Universal Geometry
 
 ## Space is Simultaneously Smooth and Quantized
 
