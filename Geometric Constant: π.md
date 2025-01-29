@@ -1,7 +1,6 @@
-# Geometric Constant: π
-## Emergence of Fundamental Geometric Invariance Across Transformational Frames
+# Geometric Fundamental Constant: π
+By: Will
 
-# The Dynamic Geometric Constant: π
 ## Emergence of Fundamental Geometric Invariance Across Transformational Frames
 
 ### Abstract
