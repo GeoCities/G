@@ -1,6 +1,6 @@
 # G
 
-# The Geometry of Everything: A Unified Framework for Scale Transitions
+# The Geometry of Everything
 
 By: Will
 
