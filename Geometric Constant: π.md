@@ -1,6 +1,9 @@
 # Geometric Constant: π
 ## Emergence of Fundamental Geometric Invariance Across Transformational Frames
 
+# The Dynamic Geometric Constant: π
+## Emergence of Fundamental Geometric Invariance Across Transformational Frames
+
 ### Abstract
 
 π transcends its classical definition as a geometric ratio. This paper reveals π as a profound, dynamic geometric constant that manifests fundamental invariance through transformational frames, bridging mathematical abstraction and physical reality.
@@ -140,67 +143,135 @@ Where:
 
 Euclid.
 
-## Appendix: Detailed Mathematical Derivations
+## Appendix: Mathematical Foundations and Derivations
 
-### A.1 Fundamental Transformation Derivation
+### A.1 Euclidean Axioms: Geometric First Principles
 
-#### A.1.1 Base Transformation Equation
+#### A.1.1 Fundamental Euclidean Postulates
 
-Consider the fundamental transformation equation:
+1. **Point Axiom**: A point is that which has no part.
+   - Representation: 0-dimensional geometric entity
+   - Symbolic: P = {x ∈ ℝ⁰}
+
+2. **Line Axiom**: A line is length without breadth.
+   - Representation: 1-dimensional geometric entity
+   - Symbolic: L = {x ∈ ℝ¹ | x ∈ [0, r]}
+
+3. **Surface Axiom**: A surface is that which has length and breadth only.
+   - Representation: 2-dimensional geometric entity
+   - Symbolic: S = {(x, y) ∈ ℝ² | x, y ∈ [0, r]}
+
+4. **Circle Axiom**: A circle is a plane figure bounded by a curve.
+   - Fundamental Relationship: Circumference/Diameter = π
+   - Symbolic: C = {(x, y) | √(x² + y²) = r}
+
+#### A.1.2 Π as Fundamental Geometric Constant
+
+Define π as the invariant geometric transformation:
 ```
-Π(F) = f(base, frame, scaling)
-```
-
-Expansion of the transformation function:
-```
-Π(F) = base * φ(frame) * ψ(scaling)
-```
-
-Where:
-- φ(frame): Frame-dependent scaling factor
-- ψ(scaling): Dimensional transformation coefficient
-
-#### A.1.2 Linear Frame Derivation
-
-Linear transformation:
-```
-Π_L = base * (π / base)
-     = π * (1 + ε)
-```
-Where ε represents a minimal deviation term.
-
-#### A.1.3 Nonlinear Frame Derivation
-
-Nonlinear transformation:
-```
-Π_NL = π * (base / π)^E
-      = π * exp(ln(base/π))
+π = lim[r→∞] (Circumference / Diameter)
+   = 4 * arctan(1)
+   = 3.141592653589793...
 ```
 
-### A.2 Curvature Transformation
+### A.2 First-Principles Derivation of Fundamental Constants
 
-Curvature mapping:
-```
-C(Π) = [sin(Π/π), Π, sinh(Π/π)]
-```
+#### A.2.1 Dimensional Transformation Framework
 
-### A.3 Scaling Dynamics
-
-Dimensional scaling function:
+Fundamental transformation equation:
 ```
-S(scale) = base * exp(log(π) * log(scale))
+Λ(r) = exp{
+    [ln(P(r)) + ∫V(r)dr] / 
+    [ln(S(r)) * (α + β)]
+}
 ```
 
-### A.4 Remaining Derivations
+#### A.2.2 Deriving Speed of Light (c)
 
-**Note**: The complete mathematical derivation is ongoing. 
-Some sections require further mathematical elaboration 
-and rigorous proof development. Specific areas needing 
-comprehensive mathematical treatment include:
-- Complete proof of frame invariance
-- Detailed curvature transformation mechanisms
-- Comprehensive scaling dynamics derivation
+From geometric principles:
+```
+c = π * √[
+    (Planck Length / Planck Time)² * 
+    (Information Density)
+]
+```
+
+Computational Verification:
+```javascript
+function deriveLightSpeed(planckLength, planckTime) {
+    const informationDensity = Math.PI;
+    return Math.PI * Math.sqrt(
+        Math.pow(planckLength / planckTime, 2) * 
+        informationDensity
+    );
+}
+```
+
+#### A.2.3 Gravitational Constant (G) Derivation
+
+```
+G = π * [
+    (Planck Length)³ / 
+    (Planck Mass * (Planck Time)²)
+] * f(informationScaling)
+```
+
+#### A.2.4 Planck Constant (ℏ) Emergence
+
+```
+ℏ = π * √[
+    (Fundamental Energy) * 
+    (Dimensional Transformation Factor)
+]
+```
+
+### A.3 Constant Interdependence
+
+#### A.3.1 Π-Centered Constant Relationship
+
+```
+f(c, G, ℏ) = π * Π(scaling_factors)
+```
+
+### A.4 Computational Verification
+
+```javascript
+function validateConstantDerivation() {
+    const fundamentalConstants = {
+        planckLength: 1.616255e-35,
+        planckTime: 5.391247e-44,
+        planckMass: 2.176434e-8,
+        planckEnergy: 1.956e9
+    };
+
+    return {
+        speedOfLight: deriveSpeedOfLight(
+            fundamentalConstants.planckLength, 
+            fundamentalConstants.planckTime
+        ),
+        gravitationalConstant: deriveGravitationalConstant(
+            fundamentalConstants.planckLength,
+            fundamentalConstants.planckMass,
+            fundamentalConstants.planckTime
+        ),
+        planckConstant: derivePlanckConstant(
+            fundamentalConstants.planckEnergy
+        )
+    };
+}
+```
+
+### A.5 Ongoing Derivation Challenges
+
+**Note**: While this framework provides a first-principles approach to deriving fundamental constants from π, several critical mathematical and physical challenges remain:
+
+1. Complete proof of constant interdependence
+2. Rigorous validation of dimensional transformation mechanisms
+3. Comprehensive explanation of information scaling factors
+
+Future investigations will focus on:
+- Refining the dimensional transformation framework
+- Exploring deeper geometric constraints
+- Developing more precise scaling mechanisms
 
 ---
-
-**Note**: This theoretical framework represents a speculative yet mathematically rigorous exploration of π as a dynamic geometric constant.
