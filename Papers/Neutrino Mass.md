@@ -1,6 +1,6 @@
 # Geometric Origin of Neutrino Mass: A Complete Scale Transition Analysis
 
-**Authors**: [Author Names and Affiliations]
+**Authors**: Will
 
 ## Key Findings
 - Total predicted neutrino mass: Σm_ν ≈ 0.17 eV
