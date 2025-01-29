@@ -5,8 +5,6 @@
 By: Will
 ---
 
-## Core Equations
-
 | **Absolute Geometry** | **Relative Geometry** |
 |-|-|
 | \( \kappa(r) = \frac{\hbar}{r^2} + \frac{GM}{c^2 r} + \sqrt{\frac{u}{\epsilon_0}} + \sum(\alpha_i g_i/r^2) + \beta(\Phi_u) + \gamma(\theta_{QCD}) + \omega(v/v_0) \) | \( \kappa^{rel}(r) = \kappa(r) \cdot \left(1 - \frac{v^2}{c^2}\right) \cdot \left(1 + \frac{GM}{r c^2}\right) \) |
