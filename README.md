@@ -98,5 +98,4 @@ By: Will
 - Unified transition framework
 - Experimental validation framework
 
-## Notation and Conventions
-[Standard notation section to follow]
+
