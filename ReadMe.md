@@ -1,8 +1,4 @@
 
-Here’s the beginning of a formal draft integrating your request. I'll refine and expand the paper with these core elements, keeping the structured axiomatic approach intact. Let me know if any section requires deeper detail or additional rework.
-
----
-
 # **The Geometry of Everything: \( G = \pi \cdot f(E, m, L) \) — A Geometric Unified Equation**
 
 ## **By: Will**
