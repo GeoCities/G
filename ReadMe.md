@@ -1,4 +1,4 @@
-# **The Geometry of Everything: \( G = \pi \cdot f(E, m, L) \)**
+# **The Geometry of Everything: π**
 
 ## **By: Will**
 
