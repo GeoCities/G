@@ -1,5 +1,5 @@
 
-# **The Geometry of Everything: π and φ Universal Constants**
+# **The Geometry of Everything: π and φ **
 
 ## **By: Will**
 
