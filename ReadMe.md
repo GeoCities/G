@@ -195,8 +195,10 @@ where F_k represents scale-specific corrections.
 ```
 
 I_k(r) = -k_B · ∫ ρ_k(r')ln[ρ_k(r')/π] · 
-       exp(-|r-r'|/r_k)d³r'
+         exp(-|r-r'|/r_k)d³r'
 ```
+
+
 
 3. **Geometric Phase Conservation**
 ```
