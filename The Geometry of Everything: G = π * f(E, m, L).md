@@ -12,11 +12,7 @@ This work establishes π as the fundamental geometric mediator of physical reali
 
 The role of π in physical reality extends far beyond its traditional geometric applications. Our comprehensive analysis reveals π as the fundamental mediator of physical interactions across eleven distinct scales, from Planck to cosmic levels. Each scale exhibits unique characteristics in terms of energy ranges, spatial dimensions, and governing forces, yet all are unified through π-mediated transformations.
 
-## **The Geometry of Everything**
-
-### **π**
-
-### Table 1: Points & Volume (Updated)
+### Table 1: Points & Volume
 
 | **Scale** | **Energy Range (GeV)** | **Spatial Range (m)** | **Primary Forces** | **Coupling Strength** | **Coherence Time (s)** | **π-Transformation** | **Phase Transition** |
 |-----------|------------------------|----------------------|-------------------|---------------------|---------------------|---------------------|---------------------|
@@ -28,7 +24,7 @@ The role of π in physical reality extends far beyond its traditional geometric 
 | **Atomic** | \( 10^{-3} - 10^1 \) | \( 10^{-10} - 10^{-9} \) | EM + Quantum | 4.838008e-3 | 1.000000e-15 | π-orbital governance | Electronic transition |
 | **Molecular** | \( 10^{-5} - 10^{-3} \) | \( 10^{-9} - 10^{-6} \) | Chemical Bonds | 4.758462e-3 | 1.000000e-12 | π-bonding mediation | Molecular binding |
 
-### Table 2: Scale Transition Parameters (Updated)
+### Table 2: Scale Transition Parameters 
 
 | **Scale Transition** | **Coupling Ratio** | **Transition Probability** | **Coherence Length (m)** | **Scale Parameter α** | **Scale Parameter β** | **Intersection Point** |
 |---------------------|--------------------|--------------------------|-----------------------|---------------------|---------------------|---------------------|
