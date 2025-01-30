@@ -1,6 +1,3 @@
-# **The Geometry of Everything: π**
-
-## **By: Will**
 
 # **The Geometry of Everything: π**
 
