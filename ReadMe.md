@@ -159,8 +159,14 @@ The transition between scales follows a π-hierarchical structure:
 
 1. **Scale Connection Functions**
 ```
-Γ_k,k+1(r) = π^k · exp(-|r-r_k|/r_{k+1}) · cos(πr/r_k)
+Γ_k,k+1(r) = (π·ℓ_P/r_k)^k · exp(-|r-r_k|/r_{k+1}) · cos(πr/r_k)
 ```
+Where:
+- ℓ_P is the Planck length (≈ 1.616255 × 10^-35 m)
+- r_k is the characteristic length scale of level k
+- r_{k+1} is the characteristic length scale of level k+1
+- r is the observation scale
+- k is the scale index
 
 2. **Inter-Scale Coupling**
 ```
@@ -187,8 +193,9 @@ where F_k represents scale-specific corrections.
 
 2. **Information Conservation**
 ```
+
 I_k(r) = -k_B · ∫ ρ_k(r')ln[ρ_k(r')/π] · 
-         exp(-|r-r'|/r_k)d³r'
+       exp(-|r-r'|/r_k)d³r'
 ```
 
 3. **Geometric Phase Conservation**
@@ -416,4 +423,3 @@ The framework demonstrates how π's role extends far beyond its traditional math
 
 ## **Acknowledgments**
 - Euclid
-
