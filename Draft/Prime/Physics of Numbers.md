@@ -1,4 +1,4 @@
-```markdown
+
 # The Physics of Numbers: A Mathematical Exploration of Wave-Particle Numerical Duality
 
 ## Abstract
