@@ -1,5 +1,5 @@
 
-# **The Geometry of Everything: π and φ **
+# **The Geometry of Everything: π and φ**
 
 ## **By: Will**
 
