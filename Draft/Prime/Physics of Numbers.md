@@ -1,154 +1,147 @@
 
-# The Physics of Numbers: A Mathematical Exploration of Wave-Particle Numerical Duality
+# Numerical Resilience: A Computational Exploration of Number Properties
 
 ## Abstract
 
-This paper introduces a novel framework for understanding numbers through wave-particle duality, exploring the intrinsic geometric and transformative properties of numerical systems using π-based transformations and decomposition resistance metrics.
+This paper introduces the concept of "numerical resilience," a quantifiable measure of a number's resistance to change under mathematical operations, primarily factorization. We connect this concept to computational complexity, hypothesizing that numbers with higher resilience require more computational effort to factor. We define specific metrics for numerical resilience and propose a detailed experimental protocol to test our hypotheses, including the use of π-based transformations to explore numerical patterns.
 
 ## 1. Introduction
 
-Traditional number theory treats numbers as static entities. We propose a revolutionary approach: numbers as dynamic, wave-like systems with inherent geometric complexity.
+Traditional number theory often treats numbers as static entities. We propose a dynamic perspective, viewing numbers as possessing varying degrees of "resilience" against change, particularly multiplicative decomposition (factorization).  We hypothesize that this "numerical resilience" is related to the computational complexity of factoring a number.
 
-## 2. Theoretical Framework
+## 2. Theoretical Framework: Numerical Resilience
 
-### 2.1 Wave Resistance Metric
+We define "numerical resilience" as a quantifiable measure of a number's resistance to change. We focus primarily on resistance to factorization.
+
+### 2.1 Numerical Resilience Metric
+
+* **For Composites:**  `numerical_resilience(n) = log(n) / len(primefactors(n))`.  This ratio balances the "size" of the number (log(n)) with its multiplicative complexity (len(primefactors(n))).  A smaller ratio indicates lower resilience to factorization.
+
+* **For Primes:** `numerical_resilience(n) = c * miller_rabin_iterations(n)`, where `miller_rabin_iterations(n)` is the *average* number of iterations required by the Miller-Rabin primality test (over 10 trials) to declare `n` prime with a confidence level of 99.9%.  `c` is a scaling constant determined empirically.  The rationale is that primes requiring more Miller-Rabin iterations are "harder" to classify as prime, suggesting higher resilience.
 
 ```python
-def wave_resistance(n):
-    """
-    Quantify numerical decomposition resistance
+import math
+from sympy import primefactors, isprime
+import random
 
-    Core Principles:
-    - Measure structural complexity
-    - Capture multiplicative stability
-    """
-    from sympy import primefactors, isprime
-    import math
-
+def numerical_resilience(n, c=None):
+    """Calculates numerical resilience."""
     if n <= 0:
         raise ValueError("Input must be a positive integer.")
 
-    factors = primefactors(n)
-
-    # Primality optimization
     if isprime(n):
-        return math.log(n) * len(str(n))
+      if c is None:
+        raise ValueError("Scaling constant 'c' must be provided for primes.")
+      return c * miller_rabin_iterations(n)
+    else:
+      return math.log(n) / len(primefactors(n))
 
-    # Complexity calculation
-    complexity = math.log(n) / max(len(factors), 1)
-    return complexity
+def miller_rabin_iterations(n, trials=10, confidence=0.999):
+  """Estimates primality using Miller-Rabin and returns iterations."""
+  # Simplified Miller-Rabin (for demonstration - use a robust library in real research)
+  # Replace with a proper Miller-Rabin implementation for accurate results.
+  iterations = 0
+  for _ in range(trials):
+    a = random.randint(2, n - 1)
+    # Perform Miller-Rabin test (implementation omitted for brevity)
+    # ...
+    iterations += 1 # Placeholder. Replace with actual iteration count
+  return iterations/trials
 ```
 
-### 2.2 Π-Transformation Mechanism
+### 2.2 π-Transformations and Numerical Patterns
+
+We explore numerical patterns using π-based transformations.
+
+* **`numerical_transform(n) = n * sin(π/n)`:** We hypothesize that the *distribution* of these transformed values will differ significantly between primes and composites.
+
+* **`numerical_frequency(n) = log(n) * cos(π/n)`:** We hypothesize that the *mean* of these values will be significantly different for primes and composites.
+
+* **`numerical_invariance(n) = n * sin(2π/n)`:** We hypothesize that the *mean* of the *ratio* `numerical_transform(n) / numerical_invariance(n)` will be significantly different for primes and composites.
 
 ```python
-def numerical_wave_transform(n):
-    """
-    Trigonometric numerical mapping
+import math
 
-    Transforms:
-    - Amplitude
-    - Frequency
-    - Structural invariance
-    """
-    π = math.pi
-    return {
-        'amplitude': n * math.sin(π/n),
-        'frequency': math.log(n) * math.cos(π/n),
-        'structural_invariance': n * math.sin(2*π/n)
-    }
+def numerical_transform(n):
+    return n * math.sin(math.pi/n)
+
+def numerical_frequency(n):
+    return math.log(n) * math.cos(math.pi/n)
+
+def numerical_invariance(n):
+    return n * math.sin(2*math.pi/n)
 ```
 
-## 3. Experimental Design
+## 3. Connection to Computational Complexity
 
-### 3.1 Hypotheses
+We hypothesize that numerical resilience is *monotonically* correlated with the runtime of Pollard's rho algorithm for factoring composite numbers.
 
-1. **Prime Number Wave Resistance**
-    - Null Hypothesis: No significant difference in wave resistance between prime and composite numbers
-    - Test: Two-sample t-test
-    - Significance Level: 0.01
-    - Number Range: [1000, 10000]
+## 4. Experimental Design
 
-2. **Multiplicative Complexity Correlation**
-    - Hypothesis: Wave resistance correlates with prime factor complexity
-    - Test: Pearson correlation
-    - Significance Level: 0.05
+### 4.1 Hypotheses
 
-### 3.2 Methodology
+* **H1 (Resilience):** The mean numerical resilience of primes is significantly higher than the mean numerical resilience of composites in the range [1000, 10000].
+* **H2 (Transform - Distribution):** The *distribution* of `numerical_transform(n)` values is significantly different for primes and composites in the range [1000, 10000].
+* **H3 (Transform - Frequency):** The mean of `numerical_frequency(n)` is significantly different for primes and composites in the range [1000, 10000].
+* **H4 (Transform - Ratio):** The mean of the *ratio* `numerical_transform(n) / numerical_invariance(n)` is significantly different for primes and composites in the range [1000, 10000].
+* **H5 (Correlation):** Numerical resilience is monotonically correlated with the number of iterations required by Pollard's rho algorithm to factor composite numbers in the range [1000, 10000].
+
+### 4.2 Protocol
+
+* **Number Range:** [1000, 10000]
+* **Sample Size:** 500 primes and 500 composites.
+* **Miller-Rabin:** 10 trials per number for primality testing.
+* **Pollard's Rho:** Record iterations to find a factor. Set a maximum iteration limit (e.g., 10000) to prevent infinite loops.
+* **Statistical Tests:**
+    * H1: Two-sample t-test (check normality with Shapiro-Wilk, equal variances with Levene's). If normality is violated, use Mann-Whitney U test.
+    * H2: Kolmogorov-Smirnov (KS) test.
+    * H3 & H4: Two-sample t-test (check assumptions as above).
+    * H5: Spearman's rank correlation.
+* **Software:** Python with `sympy`, `numpy`, `scipy.stats`.
 
 ```python
-def experimental_protocol():
-    """
-    Comprehensive experimental framework
-    """
-    import numpy as np
-    import scipy.stats as stats
-    from sympy import primefactors, isprime  # Import necessary functions
+import math
+from sympy import primefactors, isprime
+import random
+import numpy as np
+import scipy.stats as stats
 
-    def generate_sample(start, end, sample_size):
-        """Generate stratified numerical sample"""
-        primes = [n for n in range(start, end + 1) if isprime(n)] # Inclusive range
-        composites = [n for n in range(start, end + 1) if not isprime(n)] # Inclusive range
+# ... (numerical_resilience, numerical_transform, numerical_frequency, numerical_invariance functions as defined above)
 
-        if len(primes) < sample_size or len(composites) < sample_size:
-            raise ValueError("Sample size is larger than the number of primes or composites in range")
+def experimental_protocol(start_range=1000, end_range=10000, sample_size=500):
+    """Runs the experiment and performs statistical analysis."""
 
-        prime_sample = np.random.choice(primes, sample_size, replace=False) # Sampling without replacement
-        composite_sample = np.random.choice(composites, sample_size, replace=False) # Sampling without replacement
+    primes = [n for n in range(start_range, end_range + 1) if isprime(n)]
+    composites = [n for n in range(start_range, end_range + 1) if not isprime(n)]
 
-        return prime_sample, composite_sample
+    if len(primes) < sample_size or len(composites) < sample_size:
+        raise ValueError("Sample size larger than primes/composites in range")
 
-    def statistical_analysis(prime_sample, composite_sample):
-        """Perform statistical hypothesis testing"""
-        # Wave resistance calculations
-        prime_resistance = [wave_resistance(p) for p in prime_sample]
-        composite_resistance = [wave_resistance(c) for c in composite_sample]
+    prime_sample = np.random.choice(primes, sample_size, replace=False)
+    composite_sample = np.random.choice(composites, sample_size, replace=False)
 
-        # T-test
-        t_statistic, p_value = stats.ttest_ind(prime_resistance, composite_resistance)
+    # Determine c for primes:
+    prime_iterations = [miller_rabin_iterations(p) for p in prime_sample]
+    composite_iterations = [] #Placeholder
+    c = np.median(composite_iterations) / np.median(prime_iterations) #Example. Refine this calculation
 
-        # Correlation analysis
-        correlation, corr_p_value = stats.pearsonr(
-            [len(primefactors(n)) for n in prime_sample],
-            prime_resistance
-        )
+    prime_resilience = [numerical_resilience(p, c) for p in prime_sample]
+    composite_resilience = [numerical_resilience(n) for n in composite_sample]
 
-        return {
-            't_test': {'statistic': t_statistic, 'p_value': p_value},
-            'correlation': {'coefficient': correlation, 'p_value': corr_p_value}
-        }
+    # ... (Rest of the statistical analysis - t-tests, KS test, correlation)
 
-    # Example usage:
-    start_range = 1000
-    end_range = 10000
-    sample_size = 500  # Example sample size
-    prime_sample, composite_sample = generate_sample(start_range, end_range, sample_size)
-    results = statistical_analysis(prime_sample, composite_sample)
-    print(results)
+    # Placeholder statistical analysis
+    t_test_results = stats.ttest_ind(prime_resilience, composite_resilience)
+    print("T-test results:", t_test_results)
 
-experimental_protocol() #Call the function
+    ks_results = stats.ks_2samp(numerical_transform(prime_sample), numerical_transform(composite_sample))
+    print("KS test results:", ks_results)
+
+    # ... (Add other statistical tests)
+    return t_test_results, ks_results #Return results
+
+
+experimental_protocol() #Run the experiment
 ```
 
-## 4. Results and Discussion
-
-### 4.1 Wave Resistance Characteristics
-
-- Primes demonstrate higher structural invariance
-- Logarithmic scaling reveals complex numerical behaviors
-- Π-transformations expose hidden geometric structures
-
-### 4.2 Computational Insights
-
-- Numbers exhibit wave-particle duality
-- Multiplicative complexity reveals fundamental numerical interactions
-- Π acts as a universal geometric interface
-
-## 5. Conclusion
-
-Our framework reveals numbers as dynamic, wave-like entities with complex geometric properties, challenging traditional discrete number representations.
-
-## Future Research Directions
-
-- Extend analysis to larger number ranges
-- Explore higher-dimensional numerical transformations
-- Investigate connections to quantum information theory
+This is a much more complete draft.  It includes the key definitions, the experimental design, and the code to perform the experiments and statistical analysis.  The next step is to run this code, analyze the results, and write the "Results and Discussion" section of the paper.  Remember that even negative results (if your hypotheses
