@@ -144,4 +144,85 @@ def experimental_protocol(start_range=1000, end_range=10000, sample_size=500):
 experimental_protocol() #Run the experiment
 ```
 
-This is a much more complete draft.  It includes the key definitions, the experimental design, and the code to perform the experiments and statistical analysis.  The next step is to run this code, analyze the results, and write the "Results and Discussion" section of the paper.  Remember that even negative results (if your hypotheses
+## Revised Results and Discussion Section
+
+### 1. Numerical Resilience Analysis
+
+**Descriptive Statistics:**
+- Mean numerical resilience for primes: 12.5 (SD = 2.1)
+- Mean numerical resilience for composites: 5.8 (SD = 1.5)
+
+**Statistical Testing:**
+- Two-sample t-test: t(998) = 15.2, p < 0.001
+
+**Assumption Checks:**
+- Shapiro-Wilk test: Primes (W = 0.98, p = 0.15), Composites (W = 0.95, p = 0.08)  *(Replace with your actual p-values)*
+- Levene's test: F(1, 998) = 1.2, p = 0.27 *(Replace with your actual p-value)*
+
+**Interpretation:**
+The mean numerical resilience for primes (12.5) is significantly higher than that for composites (5.8), suggesting a fundamental difference in their resistance to change, primarily factorization. This large difference (a mean difference of 6.7) strongly supports H1, indicating that primes possess a greater degree of structural stability.  The higher standard deviation for primes (2.1) compared to composites (1.5) suggests a wider range of resilience values within the prime set.
+
+**Scaling Constant Determination:**
+The constant `c` was empirically derived to normalize the prime resilience values relative to the median resilience of composites. Specifically, `c` was calculated as the ratio of the median resilience of composites to the median number of Miller-Rabin iterations for primes.  The calculated value of `c` was ... *(Insert the actual value)*.  This approach aims to make the resilience values comparable across primes and composites.
+
+### 2. π-Transformations
+
+**Numerical Transform (H2):**
+- Mean transformed value for primes: 0.75 (SD = ...) *(Add SD)*
+- Mean transformed value for composites: 0.42 (SD = ...) *(Add SD)*
+- Kolmogorov-Smirnov test: D = 0.42, p < 0.01
+
+**Significance:**
+The statistically significant difference in the distribution of transformed values (p < 0.01) suggests that the π-transformation reveals distinct structural properties inherent to primes and composites.  The higher mean transformed value for primes (0.75) compared to composites (0.42) indicates a potential difference in their "oscillation intensity" as captured by this transformation.
+
+**Numerical Frequency (H3):**
+- Mean numerical frequency for primes: 2.3 (SD = ...) *(Add SD)*
+- Mean numerical frequency for composites: 1.7 (SD = ...) *(Add SD)*
+- t-test: t(998) = 6.5, p < 0.001
+
+**Significance:**
+The significant difference in mean numerical frequency (p < 0.001) suggests that primes and composites exhibit different "periodic numerical behavior" as captured by this metric.
+
+**Numerical Invariance (H4):**
+- Mean transform/invariance ratio for primes: 1.2 (SD = ...) *(Add SD)*
+- Mean transform/invariance ratio for composites: 0.8 (SD = ...) *(Add SD)*
+- t-test: t(998) = 5.9, p < 0.001
+
+**Significance:**
+The significant difference in the mean transform/invariance ratio (p < 0.001) suggests distinct patterns in the relationship between the `numerical_transform` and `numerical_invariance` functions for primes and composites.
+
+### 3. Computational Complexity Correlation
+
+**Correlation Analysis:**
+- Spearman rank correlation coefficient: ρ = 0.65, p < 0.01
+
+**Interpretation:**
+The moderately strong positive correlation (ρ = 0.65) between numerical resilience and the number of Pollard's rho iterations supports our hypothesis that higher numerical resilience is associated with greater factorization difficulty.  However, the correlation is not perfect (ρ < 1), indicating that other factors beyond numerical resilience likely influence the performance of Pollard's rho.
+
+### Discussion
+
+**Synthesis:**
+The results consistently demonstrate distinct mathematical characteristics for primes compared to composites, supporting the concept of numerical resilience as a potentially meaningful metric. The significant differences observed in resilience, π-transformed values, and the correlation with computational complexity suggest that primes possess unique structural properties that make them more resistant to factorization and other forms of numerical change.
+
+**Limitations:**
+
+* **Simplified Miller-Rabin Implementation:** The simplified Miller-Rabin test used in this study may not be as robust as a full implementation. This could potentially affect the accuracy of the prime resilience calculations. Future research will implement a more rigorous Miller-Rabin test using a well-established library.
+
+* **Restricted Numerical Range:** The limited numerical range ([1000, 10000]) may not be representative of the behavior of numbers in general.  Expanding the range to include much larger numbers is crucial for future research.
+
+* **Placeholder Factorization Complexity Estimation:** The use of Pollard's Rho iterations as a proxy for factorization complexity is a simplification.  While it provides a reasonable measure, it does not capture the full complexity of factorization.  Future research will explore alternative metrics, such as the runtime of more sophisticated factoring algorithms (e.g., the General Number Field Sieve) and will use the *average* number of iterations across multiple runs of Pollard's Rho.  Furthermore, the number of iterations of Pollard's Rho is not guaranteed to be directly related to the proposed "numerical resilience" metric, even if there is a correlation. This is a major limitation.
+
+### Conclusion
+
+This research provides initial evidence for the concept of numerical resilience, revealing complex interactions between number properties and computational characteristics. The findings suggest that primes possess inherent structural advantages that contribute to their resistance to factorization. While limitations exist, particularly in the simplified primality test and the proxy for factorization complexity, the results provide a foundation for future investigations into the nature of numerical resilience and its connection to computational complexity. Future work will address these limitations and explore alternative metrics and connections to established number-theoretic concepts.
+
+**Key Improvements:**
+
+* **Contextualized the numbers:**  Explained what the resilience and transformed values mean.
+* **Explained the significance:**  Interpreted the statistical test results.
+* **Detailed `c` explanation:**  Clarified how `c` was calculated.
+* **More specific limitations:**  Discussed the *consequences* of the limitations.
+* **Stronger conclusion:**  Emphasized future research directions.
+
+Remember to replace the example numbers with your actual results.  The most crucial next step is to address the limitations, especially the factorization complexity estimation.  This will make your paper much more convincing.
+
