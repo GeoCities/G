@@ -3,11 +3,11 @@
 
 ## Fundamental Geometric Principles
 
-The universal scale-spanning nature of π and φ provides a novel approach to deriving the quantum mechanical wave equation. We begin with the fundamental observation that physical reality is mediated through geometric phases governed by (π+φ).
+We begin with the assumption that π and φ are geometric constants in all frames at all scales.
 
 ### Wave-Particle Duality Reformulation
 
-In the (π+φ)-centric framework, wave-particle duality emerges naturally from scale-dependent geometric transformations. The fundamental wave-particle relationship is expressed through a generalized phase operator:
+In the (π+φ)-centric framework, wave-particle duality emerges naturally from scale-dependent geometric transformation through a generalized phase operator:
 
 \[
 Π(r) = \exp\left[i(π+φ)r/ℓ_P\right] = \cos\left((π+φ)r/ℓ_P\right) + i\sin\left((π+φ)r/ℓ_P\right)
