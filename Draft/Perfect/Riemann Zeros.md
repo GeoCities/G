@@ -1,6 +1,4 @@
-Here’s an updated version of your paper, incorporating improvements for clarity, structure, and rigor while addressing the theoretical and computational concerns raised.
 
----
 
 # **Novel Spectral Approach to Computing Riemann Zeros: Independent Verification Through Quantum-Inspired Methods**
 
