@@ -125,19 +125,16 @@ T(496)/T(28) = √(496/28) = √(124/7)
 Chain Structure:
 For first four perfect numbers (6,28,496,8128):
 
-
 6 = 2 × 3
 28 = 2² × 7
 496 = 2⁴ × 31
 8128 = 2⁶ × 127
-
 
 Orbital Period Ratios:
 R₁ = T(28)/T(6) = √(14/3)
 R₂ = T(496)/T(28) = √(124/7)
 R₃ = T(8128)/T(496) = √(508/31)
 Stability Properties:
-
 
 Each ratio involves Mersenne primes
 Powers of 2 create nested resonances
@@ -166,13 +163,25 @@ T(N₅)/T(N₄) = √(4096/127) ≈ 3.98
 T(N₆)/T(N₅) = √(65536/2047) ≈ 3.99
 Orbital resonance network:
 
-
 Primary resonance: 4:1 ratio
 Secondary resonances with powers of 2
 Mersenne prime factors create stable subharmonics
 
-
 Conjecture 4.3.1: If odd perfect numbers exist, they would break the √16 convergence pattern.
+
+Let's examine Conjecture 4.3.1:
+If odd perfect numbers exist, their prime factorization must be:
+p^α × q₁²β₁ × ... × qₖ²βₖ
+where p ≡ 1 (mod 4)
+This would create orbital periods:
+T = π√((p^α × q₁²β₁ × ... × qₖ²βₖ)²/8G)
+The lack of powers of 2 would break the √16 convergence, creating:
+
+Non-standard resonances
+Different period ratio limit
+Potential orbital instabilities
+
+This suggests odd perfect numbers, if they exist, represent fundamentally different orbital dynamics.
 
 5. Applications and Open Questions
 5.1 Connections to the Riemann Hypothesis
