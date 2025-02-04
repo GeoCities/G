@@ -239,5 +239,128 @@ Physical Constraints:
 Minimum orbital radius: r_min > Schwarzschild radius
 Maximum system size determined by galactic tidal forces
 Stability bounded by Hill sphere calculations
+
+
 References
-[To be added]
+import React, { useEffect, useState } from 'react';
+
+const NumberSequences = {
+  PRIME: [2, 3, 5, 7, 11],
+  COMPOSITE: [4, 6, 8, 9, 10],
+  PERFECT: [6, 28, 496, 8128]
+};
+
+const OrbitalSimulation = () => {
+  const [orbits, setOrbits] = useState([]);
+  const [sequence, setSequence] = useState('PRIME');
+  const [time, setTime] = useState(0);
+  const G = 6.67430e-11;
+  const scale = 20; // Reduced scale to fit larger numbers
+  
+  useEffect(() => {
+    const calculateOrbit = (n, t) => {
+      const period = Math.PI * Math.sqrt(n * n / (8 * G));
+      const radius = n / 2;
+      const angle = (2 * Math.PI * t) / period;
+      
+      return {
+        x: n + radius * Math.cos(angle),
+        y: radius * Math.sin(angle),
+        number: n
+      };
+    };
+    
+    const intervalId = setInterval(() => {
+      setTime(t => t + 0.1);
+      setOrbits(NumberSequences[sequence].map(n => calculateOrbit(n, time)));
+    }, 50);
+    
+    return () => clearInterval(intervalId);
+  }, [sequence, time]);
+
+  return (
+    <div className="w-full max-w-4xl mx-auto">
+      <div className="mb-4 flex justify-center gap-4">
+        {Object.keys(NumberSequences).map(seq => (
+          <button
+            key={seq}
+            onClick={() => {
+              setSequence(seq);
+              setTime(0);
+            }}
+            className={`px-4 py-2 rounded ${
+              sequence === seq 
+                ? 'bg-blue-600 text-white' 
+                : 'bg-slate-200'
+            }`}
+          >
+            {seq.toLowerCase()}
+          </button>
+        ))}
+      </div>
+      
+      <div className="h-96 border rounded-lg p-4 bg-slate-50 overflow-hidden">
+        <svg viewBox="0 0 800 400" className="w-full h-full">
+          {/* Number line */}
+          <line 
+            x1="0" 
+            y1="200" 
+            x2="800" 
+            y2="200" 
+            stroke="black" 
+            strokeWidth="1"
+          />
+          
+          {/* Orbits */}
+          {orbits.map(({x, y, number}) => (
+            <g key={number}>
+              <text 
+                x={number * scale} 
+                y={220} 
+                textAnchor="middle" 
+                className="text-xs fill-slate-600"
+              >
+                {number}
+              </text>
+              
+              {/* Central mass */}
+              <circle 
+                cx={number * scale} 
+                cy={200} 
+                r={4} 
+                className="fill-blue-600" 
+              />
+              
+              {/* Orbiting body */}
+              <circle 
+                cx={x * scale} 
+                cy={200 + y * scale} 
+                r={3} 
+                className="fill-red-500" 
+              />
+              
+              {/* Orbital path */}
+              <ellipse 
+                cx={number * scale}
+                cy={200}
+                rx={number * scale / 2}
+                ry={number * scale / 2}
+                fill="none"
+                className="stroke-slate-300"
+                strokeDasharray="2,2"
+              />
+            </g>
+          ))}
+        </svg>
+      </div>
+      
+      <div className="mt-4 text-center text-sm text-slate-600">
+        Blue dots: Central masses | Red dots: Orbiting bodies
+      </div>
+    </div>
+  );
+};
+
+export default OrbitalSimulation;
+
+
