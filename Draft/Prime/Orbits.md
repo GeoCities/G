@@ -61,12 +61,50 @@ T(N₁)/T(N₂) is rational
 
 Theorem 3.1.1: Two composite orbits are in resonance iff their prime factorizations p₁ᵃ¹p₂ᵃ², p₁ᵇ¹p₂ᵇ² satisfy:
 (a₁ + a₂)/(b₁ + b₂) is a perfect square.
+
+Let's prove Theorem 3.1.1. For composite numbers N₁, N₂:
+
+Let N₁ = p₁ᵃ¹p₂ᵃ² and N₂ = p₁ᵇ¹p₂ᵇ²
+
+Period ratio T₁/T₂ = √(N₁/N₂) = √(p₁^(a₁-b₁)p₂^(a₂-b₂))
+
+For resonance, this must be rational, so:
+p₁^(a₁-b₁)p₂^(a₂-b₂) must be a perfect square.
+
+Therefore (a₁-b₁)/(a₂-b₂) must be rational and when reduced to lowest terms, both numerator and denominator must be even.
+
+This is equivalent to (a₁+a₂)/(b₁+b₂) being a perfect square.
+
 Corollary 3.1.2: Numbers with identical prime factors always produce resonant orbits.
 Example:
 
 For N₁ = 12 = 2² × 3
 For N₂ = 18 = 2 × 3²
 T(18)/T(12) = √(18/12) = √(3/2)
+
+3.2 Orbital Stability and Resonance Effects
+
+Stability Regions:
+
+Strong resonance: N₁/N₂ = k² (perfect square ratio)
+Weak resonance: N₁/N₂ ≈ k² + ε
+No resonance: irrational ratios
+
+Destabilizing Effects:
+For composite numbers with many prime factors, multiple resonances create orbital perturbations:
+
+First order: direct resonance between two orbits
+Second order: induced resonances through shared factors
+Chain effects: cascading perturbations through factor networks
+
+Arnold Tongues:
+The stability diagram forms Arnold tongues where:
+
+Width ∝ number of shared prime factors
+Height ∝ exponents in prime factorization
+
+Physical Implications:
+Highly composite numbers create unstable orbital networks, while numbers with few factors maintain quasi-stable configurations.
 
 ## 4. Perfect Number Orbits
 
