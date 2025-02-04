@@ -29,6 +29,27 @@ Prime orbits exhibit unique characteristics:
 For consecutive primes p₁, p₂:
 T₂/T₁ = √(p₂/p₁)
 
+2.1 Properties
+Prime orbits exhibit unique characteristics:
+
+Non-degenerate periods due to indivisibility
+No subharmonic resonances
+Sequential orbital periods scale with √p for prime p
+
+2.2 Period Ratios and Prime Gaps
+For consecutive primes p₁, p₂:
+T₂/T₁ = √(p₂/p₁)
+This ratio exhibits several notable properties:
+
+Monotonic Growth: Since p₂ > p₁, the ratio is always > 1
+Bounded Growth: By Bertrand's postulate, p₂ < 2p₁, thus T₂/T₁ < √2
+Gap Influence: For prime gap g = p₂ - p₁:
+T₂/T₁ = √(1 + g/p₁)
+
+These ratios form a sequence converging to 1 as primes increase, reflecting the decreasing relative size of prime gaps.
+
+Theorem 2.2.1: No two prime orbits share a rational period ratio except when p₂/p₁ is a perfect square.
+
 ## 3. Composite Number Orbits
 
 ### 3.1 Resonance Structure
