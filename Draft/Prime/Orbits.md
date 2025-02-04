@@ -120,6 +120,31 @@ Known even perfect numbers (6, 28, 496, 8128) form a stable resonance chain:
 T(28)/T(6) = √(28/6) = √(14/3)
 T(496)/T(28) = √(496/28) = √(124/7)
 
+4.2 Perfect Number Resonance Chains
+
+Chain Structure:
+For first four perfect numbers (6,28,496,8128):
+
+
+6 = 2 × 3
+28 = 2² × 7
+496 = 2⁴ × 31
+8128 = 2⁶ × 127
+
+
+Orbital Period Ratios:
+R₁ = T(28)/T(6) = √(14/3)
+R₂ = T(496)/T(28) = √(124/7)
+R₃ = T(8128)/T(496) = √(508/31)
+Stability Properties:
+
+
+Each ratio involves Mersenne primes
+Powers of 2 create nested resonances
+System exhibits hierarchical stability
+
+Theorem 4.2.1: Perfect number orbital ratios form a sequence converging to √16.
+
 5. Applications and Open Questions
 5.1 Connections to the Riemann Hypothesis
 Our orbital system provides a physical analog for properties of the Riemann zeta function ζ(s):
