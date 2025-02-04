@@ -50,10 +50,23 @@ These ratios form a sequence converging to 1 as primes increase, reflecting the 
 
 Theorem 2.2.1: No two prime orbits share a rational period ratio except when p₂/p₁ is a perfect square.
 
-## 3. Composite Number Orbits
+3. Composite Number Orbits
+3.1 Resonance Structure
+For a composite number N = ∏pᵢᵉⁱ, the orbital period:
+T(N) = π√(N²/(8G))
+This creates resonances when:
 
-### 3.1 Resonance Structure
-[To be expanded: Analysis of orbital resonances based on prime factorization]
+N₁, N₂ share prime factors
+T(N₁)/T(N₂) is rational
+
+Theorem 3.1.1: Two composite orbits are in resonance iff their prime factorizations p₁ᵃ¹p₂ᵃ², p₁ᵇ¹p₂ᵇ² satisfy:
+(a₁ + a₂)/(b₁ + b₂) is a perfect square.
+Corollary 3.1.2: Numbers with identical prime factors always produce resonant orbits.
+Example:
+
+For N₁ = 12 = 2² × 3
+For N₂ = 18 = 2 × 3²
+T(18)/T(12) = √(18/12) = √(3/2)
 
 ## 4. Perfect Number Orbits
 
