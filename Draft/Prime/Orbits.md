@@ -109,7 +109,16 @@ Highly composite numbers create unstable orbital networks, while numbers with fe
 ## 4. Perfect Number Orbits
 
 ### 4.1 Special Properties
-[To be expanded: Investigation of orbital characteristics for perfect numbers]
+Perfect Number Orbital Properties
+Perfect numbers create unique orbital structures:
+
+For even perfect number N = 2^(p-1)(2^p - 1):
+T(N) = π√(2^(2p-2)(2^p - 1)²/8G)
+Perfect Number Resonance Theorem:
+All even perfect numbers create resonant orbits due to shared Mersenne prime factors.
+Known even perfect numbers (6, 28, 496, 8128) form a stable resonance chain:
+T(28)/T(6) = √(28/6) = √(14/3)
+T(496)/T(28) = √(496/28) = √(124/7)
 
 5. Applications and Open Questions
 5.1 Connections to the Riemann Hypothesis
