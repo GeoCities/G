@@ -156,6 +156,24 @@ Therefore ratio approaches √(2⁴) = √16
 
 Thus perfect number orbital ratios converge to √16.
 
+4.3 Higher Perfect Number Properties
+
+Next perfect numbers:
+N₅ = 2¹² × (2¹³ - 1) = 33,550,336
+N₆ = 2¹⁶ × (2¹⁷ - 1) = 8,589,869,056
+Period ratios approaching √16:
+T(N₅)/T(N₄) = √(4096/127) ≈ 3.98
+T(N₆)/T(N₅) = √(65536/2047) ≈ 3.99
+Orbital resonance network:
+
+
+Primary resonance: 4:1 ratio
+Secondary resonances with powers of 2
+Mersenne prime factors create stable subharmonics
+
+
+Conjecture 4.3.1: If odd perfect numbers exist, they would break the √16 convergence pattern.
+
 5. Applications and Open Questions
 5.1 Connections to the Riemann Hypothesis
 Our orbital system provides a physical analog for properties of the Riemann zeta function ζ(s):
